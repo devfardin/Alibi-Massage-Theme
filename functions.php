@@ -20,17 +20,17 @@ class FUNCTIONS
         require_once(ALIBI_TEMPLATE_DIR . 'enqueue.php');
         require_once ALIBI_TEMPLATE_DIR . 'security.php';
         require_once ALIBI_TEMPLATE_DIR . 'custom-post-types.php';
+        require_once ALIBI_TEMPLATE_DIR . 'additional-service.php';
+        require_once ALIBI_TEMPLATE_DIR . 'cmb2/init.php';
+        require_once ALIBI_TEMPLATE_DIR . 'cmb2/init.php';
     }
 
     public function init()
     {
         new ALIBI_Assets();
         new ALIBI_Security();
-        new ALIBI_Custom_Post_Types();
+        new ALIBI_CUSTOM_POST_TYPES();
+        new ADDITIONAL_SERVICE();
     }
-
- 
-
 }
-
 new FUNCTIONS();
