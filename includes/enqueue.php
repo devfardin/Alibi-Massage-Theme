@@ -1,5 +1,6 @@
 <?php 
 
+define('ALIBI_STYLE_URI', get_stylesheet_directory_uri() . '/assets/css/');
 class ALIBI_Assets{
     public function __construct(){
         $this->init();
@@ -10,7 +11,6 @@ class ALIBI_Assets{
     }
     
     public function enqueue_scripts() {
-        // wp_enqueue_script('alibi-main', get_template_directory_uri() . '/assets/js/main.js', [], ALIBI_THEME_VERSION, true);
-        wp_enqueue_style('alibi-main', get_template_directory_uri() . '/assets/css/main.css', [], ALIBI_THEME_VERSION, 'all');
+        wp_enqueue_style('alibi-main', ALIBI_STYLE_URI . 'main.css', [], ALIBI_THEME_VERSION, 'all');
     }
 }
