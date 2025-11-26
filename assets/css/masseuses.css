@@ -1,12 +1,27 @@
-@media only screen and (min-width:){
-    
-}
 .masseuses-list_row {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: space-between;
     align-items: start;
     gap: 20px;
+}
+
+@media only screen and (min-width: 576px){
+    .masseuses-list_row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .masseuses-list_row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .masseuses-list_row {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .masseuse-item_wrap {

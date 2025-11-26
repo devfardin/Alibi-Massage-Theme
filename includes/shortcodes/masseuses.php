@@ -16,13 +16,13 @@ class MASSEUSES
         ob_start();
         // Shortcode attributes with defaults
         $atts = shortcode_atts(array(
-            'count' => 5,
+            'count' => 30,
         ), $atts, 'masseuses_list');
 
         // Query masseuses custom post type
         $args = array(
             'post_type' => 'masseur',
-            // 'post_status'=> 'published',
+            'post_status' => 'publish',
             'posts_per_page' => intval($atts['count']),
         );
         $query = new WP_Query($args); ?>
