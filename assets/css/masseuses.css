@@ -44,6 +44,9 @@
 /* when over it will be animated */
 .masseuse-item_feature-img img {
     transition: transform 0.5s ease;
+    width: 100%;
+    height: 400px !important;
+    object-fit: cover;
 }
 
 .masseuse-item_feature-img:hover img {
@@ -111,6 +114,31 @@
     color: var(--e-global-color-primary);
     display: flex;
     gap: 5px;
+}
+.masseuse-item_details_view-profile{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 600;
+    color: var(--e-global-color-primary);
+    border-top: 1px solid var(--e-global-color-1fc6654);
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+.masseuse-item_details_view-profile:hover{
+    color: var(--e-global-color-secondary);
+}
+.masseuse-item_details_view-profile i{
+    height: 21px;
 }
 
 

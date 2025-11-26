@@ -18,3 +18,14 @@
 .primary-btn:hover {
     background-color: color-mix(in srgb, var(--e-global-color-primary) 90%, black); /* hover:bg-primary/90 */
 }
+
+.link_button{
+    text-decoration: none;
+    color: var(--e-global-color-text);
+     font-family: "Montserrat", sans-serif !important;
+     cursor: pointer;
+     transition: all 0.4s;
+}
+.link_button:hover{
+    color: var(--e-global-color-primary);
+}
