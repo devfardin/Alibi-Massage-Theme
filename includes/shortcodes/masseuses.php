@@ -67,11 +67,16 @@ class MASSEUSES
                                 <h3 class="masseuse-item_details_title"> <?php echo esc_html(get_the_title()) ?> </h3>
 
                                 <div class="masseuse-item_details_location_address">
-                                   <i aria-hidden="true" class="icon icon-map-marker1"></i>
+                                    <i aria-hidden="true" class="icon icon-map-marker1"></i>
                                     <span class="masseuse-item_details_price-value"> $
                                         <?php echo esc_html(get_post_meta(get_the_ID(), 'location__address', true)); ?>
                                     </span>
                                 </div>
+                                <!-- View Profile Button -->
+                                <a href="<?php echo esc_attr(get_the_permalink()); ?>" class="masseuse-item_details_view-profile">
+                                    View Profile
+                                </a>
+                                <!-- End View Profile Button -->
                             </div>
                         </a>
                     <?php endwhile; ?>
@@ -80,6 +85,7 @@ class MASSEUSES
                 <?php endif; ?>
             </div>
         </div>
+        <?php wp_reset_postdata(); ?>
         <?php return ob_get_clean();
     }
 }
