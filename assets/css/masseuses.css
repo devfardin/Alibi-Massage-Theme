@@ -1,0 +1,110 @@
+@media only screen and (min-width:){
+    
+}
+.masseuses-list_row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+}
+
+.masseuse-item_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid var(--e-global-color-1fc6654);
+    border-radius: 11px;
+}
+
+.masseuse-item_feature-img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+/* when over it will be animated */
+.masseuse-item_feature-img img {
+    transition: transform 0.5s ease;
+}
+
+.masseuse-item_feature-img:hover img {
+    transform: scale(1.2);
+}
+
+.hover_over_details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    opacity: 1;
+    z-index: 999;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
+    gap: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+.masseuse-item_feature-img:hover .hover_over_details{
+    visibility: visible;
+    opacity: 1;
+}
+
+.hover_over_details_list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+    padding-bottom: 5px;
+}
+.hover_over_details_list span{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;;
+}
+.hover_over_details_list span:first-child {
+  color: var(--e-global-color-primary);
+    font-weight: 600;
+
+}
+
+.hover_over_details {
+    color: white;
+}
+.masseuse-item_details{
+    padding: 0px 10px 10px 10px;
+}
+.masseuse-item_details_title{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif !important;
+    margin: 0 !important;
+    margin-bottom: 5px !important;
+    color: var(--e-global-color-secondary);
+}
+.masseuse-item_details_location_address{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif !important;
+    color: var(--e-global-color-primary);
+    display: flex;
+    gap: 5px;
+}
+
+
+/* no masseuses found style */
+.masseuses-list_no-masseuses {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--e-global-color-secondary);
+    padding: 30px 0;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 500;
+}

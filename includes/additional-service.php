@@ -1,4 +1,8 @@
 <?php
+
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
+}
 class ADDITIONAL_SERVICE
 {
     public function __construct()
@@ -21,7 +25,8 @@ class ADDITIONAL_SERVICE
         <div class="wrap">
             <div>
                 <h1>Additional Services Management</h1>
-                <p>Configure additional services offered alongside your massage treatments. Add service titles and pricing to display complementary services to your clients.</p>
+                <p>Configure additional services offered alongside your massage treatments. Add service titles and pricing to
+                    display complementary services to your clients.</p>
             </div>
             <?php
             $cmb = new_cmb2_box([

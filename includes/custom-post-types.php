@@ -1,4 +1,8 @@
 <?php
+
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
+}
 class ALIBI_CUSTOM_POST_TYPES
 {
     public function __construct()
