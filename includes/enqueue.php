@@ -43,7 +43,6 @@ class ALIBI_Assets
     public function post_data_ajax()
     {
         check_ajax_referer('filterable_gallery_nonce', 'nonce');
-
         $args = array(
             'post_type' => 'masseur',
             'post_status' => 'publish',
@@ -64,7 +63,6 @@ class ALIBI_Assets
         } else {
             wp_send_json_error('No posts found');
         }
-
         wp_die();
     }
 
