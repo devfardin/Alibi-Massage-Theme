@@ -1,38 +1,57 @@
 /* Child theme styles */
 .primary-btn {
-    padding: 1rem 2rem; /* py-4 px-8 */
+    padding: 1rem 2rem;
+    /* py-4 px-8 */
     background-color: var(--e-global-color-primary);
-    color: #fff; 
+    color: #fff;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    font-weight: 600; 
-    border-radius: 9999px; 
-    transition: all 0.2s ease; 
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
-    text-align: center; 
-    white-space: nowrap; 
+    font-weight: 600;
+    border-radius: 9999px;
+    transition: all 0.2s ease;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    white-space: nowrap;
     cursor: pointer;
     display: inline-block;
 }
 
 .primary-btn:hover {
-    background-color: color-mix(in srgb, var(--e-global-color-primary) 90%, black); /* hover:bg-primary/90 */
+    background-color: color-mix(in srgb, var(--e-global-color-primary) 90%, black);
+    /* hover:bg-primary/90 */
 }
 
-.link_button{
+.link_button {
     text-decoration: none;
     color: var(--e-global-color-text);
-     font-family: "Montserrat", sans-serif !important;
-     cursor: pointer;
-     transition: all 0.4s;
+    font-family: "Montserrat", sans-serif !important;
+    cursor: pointer;
+    transition: all 0.4s;
 }
-.link_button:hover{
+
+.link_button:hover {
     color: var(--e-global-color-primary);
 }
 
 
 /* Elementor filterable gallery custom style */
 .gallery-item-caption-wrap .gallery-item-hoverer-bg {
-    background-image: linear-gradient(to top, var(--e-global-color-secondary) 30% , transparent  ) !important;
+    background-image: linear-gradient(to top, var(--e-global-color-secondary) 30%, transparent) !important;
     opacity: 0.8 !important;
+}
+
+.eael-cf-fardin .eael-gallery-grid-item .gallery-item-thumbnail-wrap {
+    width: 100%;
+    height: 370px !important;
+    overflow: hidden;
+    object-fit: fill !important;
+}
+
+.eael-cf-fardin .eael-gallery-grid-item .gallery-item-thumbnail-wrap>img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill !important;
+}
+.gallery-item-caption-wrap.caption-style-hoverer{
+    align-items: end !important;
 }
