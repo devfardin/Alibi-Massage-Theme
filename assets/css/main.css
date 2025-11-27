@@ -29,3 +29,10 @@
 .link_button:hover{
     color: var(--e-global-color-primary);
 }
+
+
+/* Elementor filterable gallery custom style */
+.gallery-item-caption-wrap .gallery-item-hoverer-bg {
+    background-image: linear-gradient(to top, var(--e-global-color-secondary) 30% , transparent  ) !important;
+    opacity: 0.8 !important;
+}
