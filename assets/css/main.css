@@ -14,6 +14,7 @@
     white-space: nowrap;
     cursor: pointer;
     display: inline-block;
+    width: 100%;
 }
 
 .primary-btn:hover {
@@ -54,4 +55,13 @@
 }
 .gallery-item-caption-wrap.caption-style-hoverer{
     align-items: end !important;
+}
+
+/* Fluent Form style */
+
+.ff-form-loaded input:focus {
+    border: 2px solid var(--e-global-color-primary) !important;
+}
+.ff-form-loaded textarea:focus {
+    border: 2px solid var(--e-global-color-primary) !important;
 }
