@@ -1,0 +1,183 @@
+/* style for rankmath breadcrumbs */
+.rank-math-breadcrumb {
+    margin-bottom: 2rem;
+    font-size: 16px;
+}
+
+.rank-math-breadcrumb a {
+    color: #666;
+    text-decoration: none;
+}
+
+.rank-math-breadcrumb a:hover {
+    color: var(--e-global-color-primary);
+}
+
+.rank-math-breadcrumb .separator {
+    margin: 0 8px;
+    color: #999;
+}
+
+/* Single Masseur Page Style */
+.alibi-single-masseur__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+}
+
+/* Grid 1 style */
+.masseur-profile__wrap {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.masseur-profile__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1.5rem;
+
+}
+
+.masseur-profile__inner {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    position: sticky;
+    top: 6rem;
+}
+
+.masseur-profile__info .masseur__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--e-global-color-secondary);
+}
+
+.masseur-profile__details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.masseur-profile__detail-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 1px solid var(--e-global-color-1fc6654);
+    padding-bottom: 10px;
+}
+
+.masseur-profile__detail-item:last-child {
+    border-bottom: none;
+}
+
+.masseur-profile__detail-item span:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--e-global-color-text);
+}
+
+.masseur-profile__detail-item span:last-child {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1F2937;
+}
+
+.masseur-profile__detail-item span i {
+    color: var(--e-global-color-primary);
+}
+
+.masseur-profile__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* grid 2 style */
+.masseur-details_wrap {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.masseur-details__item {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+}
+
+.masseur-details__item .item_title {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--e-global-color-secondary);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.masseur-details__item .item_title i {
+    color: var(--e-global-color-primary);
+}
+
+/* About me  */
+.profile_description {
+    font-size: 17px;
+    color: var(--e-global-color-text);
+    line-height: 1.7rem;
+}
+
+/* This Week's Schedule  */
+.list_of_week_schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list_of_week_schedule-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FBFAF9;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.list_of_week_schedule-item span:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--e-global-color-secondary);
+}
+
+.list_of_week_schedule span:last-child {
+    font-size: 16px;
+    color: #1F2937;
+    font-weight: 500;
+}
+.list_of_week_schedule .off-mark span:last-child {
+    font-size: 16px;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+.list_of_week_schedule-item.off-mark {
+    background: #F3F4F6;
+}
+
+
+/* Services Offered  */
+
+.services_offered-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}

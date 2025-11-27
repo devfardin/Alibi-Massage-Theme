@@ -32,6 +32,7 @@ class FUNCTIONS
         require_once ALIBI_TEMPLATE_DIR . 'cmb2/init.php';
         require_once ALIBI_TEMPLATE_DIR . 'theme-setup.php';
         require_once ALIBI_SHORTCODES_DIR . 'masseuses.php';
+        require_once ALIBI_SHORTCODES_DIR . 'single-masseur.php';
     }
 
     public function init()
@@ -41,6 +42,7 @@ class FUNCTIONS
         new ADDITIONAL_SERVICE();
         new MASSEUSES();
         new THEME_SETUP();
+        new SINGLE_MASSEUR();
 
 
     }

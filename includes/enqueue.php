@@ -26,6 +26,7 @@ class ALIBI_Assets
 
         wp_enqueue_style('alibi-main', ALIBI_STYLE_URI . 'main.css', [], ALIBI_THEME_VERSION, 'all');
         wp_enqueue_style('alibi-masseuses-style', ALIBI_STYLE_URI . 'masseuses.css', [], ALIBI_THEME_VERSION, 'all');
+        wp_enqueue_style('alibi-single-masseuses-style', ALIBI_STYLE_URI . 'single-masseur.css', [], ALIBI_THEME_VERSION, 'all');
 
     }
     public function enqueue_scripts()

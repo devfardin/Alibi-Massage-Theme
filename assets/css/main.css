@@ -6,7 +6,7 @@ body {
 
 /* Primary Button Style */
 .primary-btn {
-    padding: 1rem 2rem;
+    padding: 14px 30px;
     background-color: var(--e-global-color-primary);
     color: #fff;
     font-family: "Montserrat", sans-serif;
@@ -18,11 +18,39 @@ body {
     text-align: center;
     white-space: nowrap;
     cursor: pointer;
-    display: inline-block;
+    display:flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 .primary-btn:hover {
     background-color: color-mix(in srgb, var(--e-global-color-primary) 90%, black);
+    color: #fff;
+}
+/* write a style for whatsapp button it whould be whatsapp */
+.whatsapp-btn {
+    padding: 14px 30px;
+    background-color: #25D366;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 9999px;
+    transition: all 0.2s ease;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    display:flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.whatsapp-btn:hover {
+    background-color: color-mix(in srgb, #25D366 90%, black);
+    color: #fff;
 }
 /* Custom Anchor button */
 .link_button {
