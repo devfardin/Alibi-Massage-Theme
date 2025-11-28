@@ -27,6 +27,9 @@ class ALIBI_Assets
         wp_enqueue_style('alibi-main', ALIBI_STYLE_URI . 'main.css', [], ALIBI_THEME_VERSION, 'all');
         wp_enqueue_style('alibi-masseuses-style', ALIBI_STYLE_URI . 'masseuses.css', [], ALIBI_THEME_VERSION, 'all');
         wp_enqueue_style('alibi-single-masseuses-style', ALIBI_STYLE_URI . 'single-masseur.css', [], ALIBI_THEME_VERSION, 'all');
+        
+        // photo gallary style registration
+        wp_register_style('photoswipe-css', ALIBI_STYLE_URI . 'masseur-gallery.css', [], ALIBI_THEME_VERSION, 'all');
 
     }
     public function enqueue_scripts()
@@ -39,6 +42,9 @@ class ALIBI_Assets
         );
         wp_localize_script('filterable_gallery', 'filterable_gallery_params', $masseuses_data);
 
+        // photo gallary script registration
+        wp_register_script('photoswipe', ALIBI_SCRIPT_URI . 'masseur-gallery.js', ['jquery'], ALIBI_THEME_VERSION, true);
+        
     }
     public function post_data_ajax()
     {

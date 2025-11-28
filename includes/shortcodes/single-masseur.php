@@ -206,24 +206,26 @@ class SINGLE_MASSEUR
                             Image Gallery
                         </h1>
                         <div>
-
                             <?php
                             $image_ids = get_post_meta(get_the_ID(), 'image_gallery', true);
                             if (!empty($image_ids)): ?>
                                 <div class="masseur-image-gallery">
                                     <?php foreach ($image_ids as $image_id):
                                         $image_url = wp_get_attachment_image_url($image_id, 'large'); ?>
-                                        <div class="masseur-image-gallery__item">
-                                            <img src="<?php echo esc_url($image_url); ?>"
+
+                                        <a href='<?php echo $image_url ?>' data-lightbox="example-set" class='item example-image-link'>
+                                            <img src="<?php echo esc_attr($image_url) ?>"
                                                 alt="<?php echo esc_attr(get_the_title()); ?>">
-                                        </div>
+                                        </a>
                                     <?php endforeach; ?>
                                 </div>
-                            <?php endif; ?>
+                                <?php
+                                wp_enqueue_style('photoswipe-css');
+                                wp_enqueue_script('photoswipe');
+                            endif; ?>
                         </div>
                     </div>
                     <!-- Image Gallery end -->
-
                 </div>
             </div>
         </div>
