@@ -33,6 +33,7 @@ class FUNCTIONS
         require_once ALIBI_TEMPLATE_DIR . 'theme-setup.php';
         require_once ALIBI_SHORTCODES_DIR . 'masseuses.php';
         require_once ALIBI_SHORTCODES_DIR . 'single-masseur.php';
+        require_once ALIBI_SHORTCODES_DIR . 'masseuses-taxonomy.php';
     }
 
     public function init()
@@ -43,6 +44,7 @@ class FUNCTIONS
         new MASSEUSES();
         new THEME_SETUP();
         new SINGLE_MASSEUR();
+        new MASSEUSES_TAXONOMY();
 
 
     }

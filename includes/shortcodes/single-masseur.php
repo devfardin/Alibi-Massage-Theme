@@ -25,7 +25,7 @@ class SINGLE_MASSEUR
                         </div>
                         <div class="masseur-profile__info">
                             <h1 class="masseur__title">
-                                <?php echo esc_html(the_title()); ?>
+                              <?php echo esc_html(the_title()); ?>
                             </h1>
 
                             <div class="masseur-profile__details">
