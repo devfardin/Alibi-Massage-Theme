@@ -192,7 +192,11 @@ class SINGLE_MASSEUR
                                         <?php echo esc_html($service['title']); ?>
                                     </span>
                                     <span>
-                                        <?php echo esc_html($service['price']); ?> CZK
+                                        <?php
+                                        $value = $service['price'];
+                                        $value = floatval(str_replace(',', '', $value));
+
+                                        echo esc_html(number_format($value, 0)) ?> CZK
                                     </span>
                                 </div>
                             <?php endforeach; ?>
@@ -207,6 +211,7 @@ class SINGLE_MASSEUR
                         </h1>
                         <div>
                             <?php
+                            wp_enqueue_style('photoswipe-css');
                             $image_ids = get_post_meta(get_the_ID(), 'image_gallery', true);
                             if (!empty($image_ids)): ?>
                                 <div class="masseur-image-gallery">
@@ -220,7 +225,6 @@ class SINGLE_MASSEUR
                                     <?php endforeach; ?>
                                 </div>
                                 <?php
-                                wp_enqueue_style('photoswipe-css');
                                 wp_enqueue_script('photoswipe');
                             endif; ?>
                         </div>

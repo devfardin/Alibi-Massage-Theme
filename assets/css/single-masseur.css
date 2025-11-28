@@ -21,16 +21,35 @@
 /* Single Masseur Page Style */
 .alibi-single-masseur__inner {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 36px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .alibi-single-masseur__inner {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .alibi-single-masseur__inner {
+        gap: 36px;
+    }
 }
 
 /* Grid 1 style */
 .masseur-profile__wrap {
-    grid-column: span 1;
+    grid-column: span 2;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+@media only screen and (min-width:768px) {
+    .masseur-profile__wrap {
+        grid-column: span 1;
+    }
 }
 
 .masseur-profile__info {
@@ -50,10 +69,22 @@
     top: 6rem;
 }
 
+.masseur-profile__inner .masseur-profile__img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .masseur-profile__info .masseur__title {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     color: var(--e-global-color-secondary);
+}
+
+@media only screen and (min-width:768px) {
+    .masseur-profile__info .masseur__title {
+        font-size: 30px;
+    }
 }
 
 .masseur-profile__details {
@@ -116,7 +147,7 @@
 }
 
 .masseur-details__item .item_title {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--e-global-color-secondary);
     display: flex;
@@ -124,6 +155,13 @@
     gap: 15px;
     margin-bottom: 15px;
 }
+
+@media only screen and (min-width:768px) {
+    .masseur-details__item .item_title {
+        font-size: 25px;
+    }
+}
+
 
 .masseur-details__item .item_title i {
     color: var(--e-global-color-primary);
@@ -177,8 +215,14 @@
 /* Services Offered  */
 .services_offered-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
+}
+
+@media only screen and (min-width:768px) {
+    .services_offered-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .services_offered-list__item {
@@ -228,16 +272,29 @@
 }
 
 .additional-services__list__item:hover {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .additional-services__list__item span:first-child {
-    font-size: 16px;
+    font-size: 15px;
     color: #1F2937;
     font-weight: 500;
 }
+
+@media only screen and (min-width:768px) {
+    .additional-services__list__item span:first-child {
+        font-size: 16px;
+    }
+}
+
 .additional-services__list__item span:last-child {
-    font-size: 18px;
+    font-size: 16px;
     color: #C9A882;
     font-weight: 600;
+}
+
+@media only screen and (min-width:768px) {
+    .additional-services__list__item span:last-child {
+        font-size: 18px;
+    }
 }
