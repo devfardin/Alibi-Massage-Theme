@@ -163,6 +163,7 @@
     color: #1F2937;
     font-weight: 500;
 }
+
 .list_of_week_schedule .off-mark span:last-child {
     font-size: 16px;
     color: #6B7280;
@@ -173,11 +174,70 @@
     background: #F3F4F6;
 }
 
-
 /* Services Offered  */
-
 .services_offered-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+}
+
+.services_offered-list__item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: #FBFAF9;
+    padding: 12px;
+    border-radius: 10px;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1F2937;
+    transition: 0.4s;
+}
+
+.services_offered-list__item:hover {
+    color: white;
+    background: var(--e-global-color-primary);
+
+}
+
+.services_offered-list__item i {
+    color: var(--e-global-color-primary);
+    transition: 0.4s;
+}
+
+.services_offered-list__item:hover i {
+    color: white;
+}
+
+/* Additional Services */
+.additional-services__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.additional-services__list__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F7F5F6;
+    padding: 12px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.additional-services__list__item:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.additional-services__list__item span:first-child {
+    font-size: 16px;
+    color: #1F2937;
+    font-weight: 500;
+}
+.additional-services__list__item span:last-child {
+    font-size: 18px;
+    color: #C9A882;
+    font-weight: 600;
 }

@@ -36,7 +36,6 @@ class ALIBI_Assets
         $masseuses_data = array(
             'ajax_url' => admin_url('admin-ajax.php'),
             'nonce' => wp_create_nonce('filterable_gallery_nonce'),
-
         );
         wp_localize_script('filterable_gallery', 'filterable_gallery_params', $masseuses_data);
 

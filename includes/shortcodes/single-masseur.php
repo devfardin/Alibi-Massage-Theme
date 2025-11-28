@@ -107,6 +107,7 @@ class SINGLE_MASSEUR
                         </div>
                     </div>
                 </div>
+
                 <!-- grid 2 -->
                 <div class="masseur-details_wrap">
 
@@ -166,7 +167,8 @@ class SINGLE_MASSEUR
                             $services = get_the_terms(get_the_ID(), 'service');
                             if ($services && !is_wp_error($services)):
                                 foreach ($services as $service): ?>
-                                    <a href="<?php echo esc_attr(get_tag_link($service->term_id)) ?>" class="service-tag">
+                                    <a class="services_offered-list__item"
+                                        href="<?php echo esc_attr(get_tag_link($service->term_id)) ?>" class="service-tag">
                                         <i class="fas fa-check-circle"></i>
                                         <?php echo esc_html($service->name); ?>
                                     </a>
@@ -175,13 +177,57 @@ class SINGLE_MASSEUR
                         </div>
                     </div>
 
+                    <!-- Additional Services  -->
+                    <div class="masseur-details__item">
+                        <h1 class="item_title">
+                            <i class="icon icon-list"></i>
+                            Additional Services
+                        </h1>
+
+                        <div class="additional-services__list">
+                            <?php $additional_services = get_option('additional_services_settings');
+                            foreach ($additional_services['service_group'] as $service): ?>
+                                <div class="additional-services__list__item">
+                                    <span>
+                                        <?php echo esc_html($service['title']); ?>
+                                    </span>
+                                    <span>
+                                        <?php echo esc_html($service['price']); ?> CZK
+                                    </span>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+
+                    <!-- Image Gallery  -->
+                    <div class="masseur-details__item">
+                        <h1 class="item_title">
+                            <i class="fas fa-images"></i>
+                            Image Gallery
+                        </h1>
+                        <div>
+
+                            <?php
+                            $image_ids = get_post_meta(get_the_ID(), 'image_gallery', true);
+                            if (!empty($image_ids)): ?>
+                                <div class="masseur-image-gallery">
+                                    <?php foreach ($image_ids as $image_id):
+                                        $image_url = wp_get_attachment_image_url($image_id, 'large'); ?>
+                                        <div class="masseur-image-gallery__item">
+                                            <img src="<?php echo esc_url($image_url); ?>"
+                                                alt="<?php echo esc_attr(get_the_title()); ?>">
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                    <!-- Image Gallery end -->
+
                 </div>
-
-
             </div>
         </div>
         <!-- signle page wrapper -->
-
         <?php return ob_get_clean();
     }
 
