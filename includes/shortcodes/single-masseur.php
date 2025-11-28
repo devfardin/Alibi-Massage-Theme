@@ -9,7 +9,6 @@ class SINGLE_MASSEUR
     public function single_masseur_shortcode()
     {
         ob_start(); ?>
-
         <!-- signle page wrapper -->
         <div class="alibi-single-masseur__wrapper">
             <!-- breadcrumbs -->
