@@ -91,3 +91,12 @@ body {
 .ff-form-loaded textarea:focus {
     border: 2px solid var(--e-global-color-primary) !important;
 }
+
+/* developer name color */
+.gradient-text {
+  background-image: linear-gradient(to right, #ec4899, #eab308);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+/*   font-size: 1.3rem;  */
+/*   font-weight: 700;  */
+}
