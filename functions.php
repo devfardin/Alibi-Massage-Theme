@@ -29,6 +29,7 @@ class FUNCTIONS
         require_once(ALIBI_TEMPLATE_DIR . 'enqueue.php');
         require_once ALIBI_TEMPLATE_DIR . 'custom-post-types.php';
         require_once ALIBI_TEMPLATE_DIR . 'additional-service.php';
+        require_once ALIBI_TEMPLATE_DIR . 'massage-procedure-content.php';
         require_once ALIBI_TEMPLATE_DIR . 'cmb2/init.php';
         require_once ALIBI_TEMPLATE_DIR . 'theme-setup.php';
         require_once ALIBI_SHORTCODES_DIR . 'masseuses.php';
@@ -47,6 +48,7 @@ class FUNCTIONS
         new SINGLE_MASSEUR();
         new MASSEUSES_TAXONOMY();
         new ALL_MASSAGES();
+        new MASSAGE_PROCEDURE_CONTENT();
 
 
     }
