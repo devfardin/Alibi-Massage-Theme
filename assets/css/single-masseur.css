@@ -5,7 +5,7 @@
 }
 
 .rank-math-breadcrumb a {
-    color: #666;
+    color: var(--e-global-color-primary);
     text-decoration: none;
 }
 
@@ -15,7 +15,11 @@
 
 .rank-math-breadcrumb .separator {
     margin: 0 8px;
-    color: #999;
+    color: var(--e-global-color-primary);
+}
+.rank-math-breadcrumb .last {
+    margin: 0 8px;
+    color: var(--e-global-color-1fc6654);
 }
 
 /* Single Masseur Page Style */
@@ -66,7 +70,7 @@
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     position: sticky;
-    top: 6rem;
+    top: 30px;
 }
 
 .masseur-profile__inner .masseur-profile__img img {
@@ -112,13 +116,13 @@
     gap: 10px;
     font-size: 16px;
     font-weight: 500;
-    color: var(--e-global-color-text);
+    color: var(--e-global-color-f6996da);
 }
 
 .masseur-profile__detail-item span:last-child {
     font-size: 16px;
     font-weight: 500;
-    color: #1F2937;
+    color: var(--e-global-color-f215540);
 }
 
 .masseur-profile__detail-item span i {
@@ -170,7 +174,7 @@
 /* About me  */
 .profile_description {
     font-size: 17px;
-    color: var(--e-global-color-text);
+    color: var(--e-global-color-f6996da);
     line-height: 1.7rem;
 }
 
@@ -289,7 +293,7 @@
 
 .additional-services__list__item span:last-child {
     font-size: 16px;
-    color: #C9A882;
+    color: var(--e-global-color-primary);
     font-weight: 600;
 }
 

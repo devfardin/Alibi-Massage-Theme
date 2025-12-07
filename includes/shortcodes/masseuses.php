@@ -32,7 +32,7 @@ class MASSEUSES
                 <div class="masseuses-list_row">
                     <?php while ($query->have_posts()):
                         $query->the_post(); ?>
-                        <div href="<?php echo esc_attr(get_the_permalink()); ?>" class="masseuse-item_wrap">
+                        <div class="masseuse-item_wrap">
                             <div class="masseuse-item_feature-img">
                                 <?php echo get_the_post_thumbnail(get_the_ID(), 'large'); ?>
                                 <div class="hover_over_details">
@@ -67,12 +67,7 @@ class MASSEUSES
                             <div class="masseuse-item_details">
                                 <h3 class="masseuse-item_details_title"> <?php echo esc_html(get_the_title()) ?> </h3>
 
-                                <div class="masseuse-item_details_location_address">
-                                    <i aria-hidden="true" class="icon icon-map-marker1"></i>
-                                    <span class="masseuse-item_details_price-value">
-                                        <?php echo esc_html(get_post_meta(get_the_ID(), 'location__address', true)); ?>
-                                    </span>
-                                </div>
+                                
                                 <!-- View Profile Button -->
                                 <a href="<?php echo esc_attr(get_the_permalink()); ?>" class="masseuse-item_details_view-profile">
                                     View Profile <i aria-hidden="true" class="icon icon-right-arrow"></i>

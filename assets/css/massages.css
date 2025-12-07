@@ -1,0 +1,83 @@
+d.massages-list_row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 992px){
+    .massages-list_row {
+        grid-template-columns: repeat(2, 1fr);
+         gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .massages-list_row {
+        grid-template-columns: repeat(2, 1fr);
+         gap: 30px;
+    }
+}
+.massages-item_wrap{
+    background-size: cover !important;
+    background-position: right !important;
+    height: 400px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 20px 30px;
+    position: relative;
+}
+.massages-item_wrap .massages-item_details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.massages-item_wrap .massages-item_details .classmassages-item_details__title_des{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.massages-item_wrap .massages-item_details h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Montserrat';
+}
+.massages-item_wrap .massages-item_details p{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Montserrat';
+    margin: 0 !important
+}
+.massages-item_wrap .massages_footer_wrapper{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.massages-item_wrap .massages_footer_price h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--e-global-color-primary);
+    font-family: 'Montserrat';
+}
+.massages-item_wrap .massages-item_details_view-profile{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--e-global-color-primary);
+    font-family: 'Montserrat';
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
