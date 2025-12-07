@@ -1,0 +1,114 @@
+/* Single Masseur Page Style */
+.alibi-single-massage__wrapper .alibi-single-massage__inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .alibi-single-massage__wrapper .alibi-single-massage__inner {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+.massage_information__wrap.massage_information__wrap {
+    background: var(--e-global-color-secondary);
+    padding: 15px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+}
+
+.massage_information__wrap .massage_feature_image img {
+    border-radius: 14px;
+}
+.massage_information__wrap .massage_title_des {
+    padding: 15px;
+}
+.massage_information__wrap .massage_title_des h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Montserrat';
+}
+.massage_information__wrap .message_description {
+    font-size: 17px;
+    color: white !important;
+    line-height: 1.7rem;
+}
+
+.massage_information__wrap .message_description h1,
+.massage_information__wrap .message_description h2,
+.massage_information__wrap .message_description h3,
+.massage_information__wrap .message_description h4,
+.massage_information__wrap .message_description h5,
+.massage_information__wrap .message_description h6 {
+    color: white;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.massage_information__wrap .message_description h1 { font-size: 24px; }
+.massage_information__wrap .message_description h2 { font-size: 22px; }
+.massage_information__wrap .message_description h3 { font-size: 20px; }
+.massage_information__wrap .message_description h4 { font-size: 18px; }
+.massage_information__wrap .message_description h5 { font-size: 16px; }
+.massage_information__wrap .message_description h6 { font-size: 14px; }
+
+.massage_information__wrap .message_description p {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.massage_information__wrap .message_description a {
+    color: var(--e-global-color-primary);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.massage_information__wrap .message_description a:hover {
+    opacity: 0.8;
+}
+
+.massage_information__wrap .message_description ul,
+.massage_information__wrap .message_description ol {
+    margin: 15px 0;
+    padding-left: 25px;
+    color: white;
+}
+
+.massage_information__wrap .message_description li {
+    margin-bottom: 8px;
+    color: white;
+}
+
+.massage_information__wrap .message_description strong,
+.massage_information__wrap .message_description b {
+    font-weight: 700;
+    color: white;
+}
+
+.massage_information__wrap .message_description em,
+.massage_information__wrap .message_description i {
+    font-style: italic;
+}
+
+.massage_information__wrap .message_description span {
+    color: inherit;
+}
+
+.massage_information__wrap .message_description blockquote {
+    border-left: 4px solid var(--e-global-color-primary);
+    padding-left: 15px;
+    margin: 15px 0;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.massage_information__wrap .message_description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}

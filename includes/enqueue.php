@@ -28,6 +28,7 @@ class ALIBI_Assets
         wp_enqueue_style('alibi-masseuses-style', ALIBI_STYLE_URI . 'masseuses.css', [], ALIBI_THEME_VERSION, 'all');
         wp_enqueue_style('alibi-single-masseuses-style', ALIBI_STYLE_URI . 'single-masseur.css', [], ALIBI_THEME_VERSION, 'all');
         wp_enqueue_style('alibi-massages-style', ALIBI_STYLE_URI . 'massages.css', [], ALIBI_THEME_VERSION, 'all');
+        wp_enqueue_style('alibi-single-massages-style', ALIBI_STYLE_URI . 'single-massage.css', [], ALIBI_THEME_VERSION, 'all');
         
         // photo gallary style registration
         wp_register_style('photoswipe-css', ALIBI_STYLE_URI . 'masseur-gallery.css', [], ALIBI_THEME_VERSION, 'all');
