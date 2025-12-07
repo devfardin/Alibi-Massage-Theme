@@ -1,3 +1,27 @@
+/* style for rankmath breadcrumbs */
+.rank-math-breadcrumb {
+    margin-bottom: 2rem;
+    font-size: 16px;
+}
+
+.rank-math-breadcrumb a {
+    color: var(--e-global-color-primary);
+    text-decoration: none;
+}
+
+.rank-math-breadcrumb a:hover {
+    color: var(--e-global-color-primary);
+}
+
+.rank-math-breadcrumb .separator {
+    margin: 0 8px;
+    color: var(--e-global-color-primary);
+}
+.rank-math-breadcrumb .last {
+    margin: 0 8px;
+    color: var(--e-global-color-1fc6654);
+}
+
 /* Child theme styles */
 
 body main#inner-wrap {

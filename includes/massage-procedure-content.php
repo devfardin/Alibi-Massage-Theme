@@ -13,11 +13,11 @@ class MASSAGE_PROCEDURE_CONTENT
     {
         add_submenu_page(
             'edit.php?post_type=massage',
-            'Additional Services',
-            'Additional Services',
+            'Massage Procedure',
+            'Massage Procedure',
             'manage_options',
-            'additional-services',
-            [$this, 'my_custom_subpage_content']
+            'massage-procedure',
+            [$this, 'massage_procedure_page']
         );
     }
     public function my_custom_subpage_content()
@@ -71,5 +71,67 @@ class MASSAGE_PROCEDURE_CONTENT
         </div>
         <?php
 
+    }
+
+    public function massage_procedure_page()
+    { ?>
+        <div class="wrap">
+            <div>
+                <h1>Massage Procedure Management</h1>
+                <p>Configure the step-by-step procedure and details for your massage services.</p>
+            </div>
+            <?php
+            $cmb = new_cmb2_box([
+                'id' => 'massage_procedure_options',
+                'title' => 'Massage Procedure Settings',
+                'object_types' => ['options-page'],
+                'option_key' => 'massage_procedure_settings',
+                'context' => 'normal',
+                'priority' => 'high',
+                'show_names' => true,
+            ]);
+
+            $cmb->add_field(array(
+                'name' => 'Procedure Title',
+                'desc' => 'Enter the main title for the massage procedure.',
+                'id' => 'procedure_title',
+                'type' => 'text',
+            ));
+
+            $procedure_group_id = $cmb->add_field(array(
+                'id' => 'procedure_steps',
+                'type' => 'group',
+                'repeatable' => true,
+                'options' => array(
+                    'group_title' => 'Procedure Step {#}',
+                    'add_button' => 'Add Another Step',
+                    'remove_button' => 'Remove Step',
+                    'closed' => true,
+                    'sortable' => true,
+                    'remove_confirm' => esc_html__('Are you sure you want to remove?', 'cmb2'),
+                ),
+            ));
+
+            $cmb->add_group_field($procedure_group_id, array(
+                'name' => 'Image',
+                'desc' => 'Upload an icon for this step.',
+                'id' => 'image',
+                'type' => 'file',
+            ));
+
+            $cmb->add_group_field($procedure_group_id, array(
+                'name' => 'Step Description',
+                'desc' => 'Enter the description for this step.',
+                'id' => 'description',
+                'type' => 'wysiwyg',
+                'options' => array(
+                    'textarea_rows' => 8,
+                ),
+            ));
+
+            cmb2_metabox_form('massage_procedure_options', 'massage_procedure_settings');
+            ?>
+        </div>
+        <?php
     }
 }
