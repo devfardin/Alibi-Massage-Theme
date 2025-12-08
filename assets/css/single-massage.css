@@ -5,10 +5,10 @@
     gap: 30px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .alibi-single-massage__wrapper .alibi-single-massage__inner {
         grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+        gap: 40px;
     }
 }
 
@@ -22,15 +22,18 @@
 .massage_information__wrap .massage_feature_image img {
     border-radius: 14px;
 }
+
 .massage_information__wrap .massage_title_des {
     padding: 15px;
 }
+
 .massage_information__wrap .massage_title_des h1 {
     font-size: 30px;
     font-weight: 600;
     color: white;
     font-family: 'Montserrat';
 }
+
 .massage_information__wrap .massage_title_des .massage_show_more_btn {
     font-size: 18px;
     font-weight: 500;
@@ -45,12 +48,13 @@
 .massage_information__wrap .message_description {
     font-size: 17px;
     color: white !important;
-    line-height: 1.7rem;
+    line-height: 1.6rem;
     height: 255px;
     overflow: hidden;
     transition: 0.4s;
 }
-.massage_information__wrap .message_description.expanded{
+
+.massage_information__wrap .message_description.expanded {
     height: auto;
     transition: 0.4s;
 }
@@ -67,12 +71,29 @@
     font-weight: 600;
 }
 
-.massage_information__wrap .message_description h1 { font-size: 24px; }
-.massage_information__wrap .message_description h2 { font-size: 22px; }
-.massage_information__wrap .message_description h3 { font-size: 20px; }
-.massage_information__wrap .message_description h4 { font-size: 18px; }
-.massage_information__wrap .message_description h5 { font-size: 16px; }
-.massage_information__wrap .message_description h6 { font-size: 14px; }
+.massage_information__wrap .message_description h1 {
+    font-size: 24px;
+}
+
+.massage_information__wrap .message_description h2 {
+    font-size: 22px;
+}
+
+.massage_information__wrap .message_description h3 {
+    font-size: 20px;
+}
+
+.massage_information__wrap .message_description h4 {
+    font-size: 18px;
+}
+
+.massage_information__wrap .message_description h5 {
+    font-size: 16px;
+}
+
+.massage_information__wrap .message_description h6 {
+    font-size: 14px;
+}
 
 .massage_information__wrap .message_description p {
     margin-bottom: 15px;
@@ -129,4 +150,169 @@
     height: auto;
     border-radius: 8px;
     margin: 15px 0;
+}
+
+
+/* Grid 2 */
+
+.massage-procedure__list {
+    background: var(--e-global-color-secondary);
+    padding: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+@media only screen and (min-width: 768px) {
+    .massage-procedure__list {
+    gap: 20px;
+}
+}
+.massage-procedure__list .massage-procedure__header{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+
+}
+
+.massage-procedure__list .massage-procedure__list__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .massage-procedure__list .massage-procedure__list__item {
+    gap: 40px;
+}
+}
+
+.massage-procedure__list .massage-procedure__list__item img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+@media only screen and (min-width:768px) {
+    .massage-procedure__list .massage-procedure__list__item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+}
+
+.massage-procedure__list .massage-procedure__list__item .massage-procedure__des {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.7rem;
+    font-family: 'Montserrat';
+}
+@media only screen and (min-width: 768px) {
+    .massage-procedure__list .massage-procedure__list__item .massage-procedure__des {
+    font-size: 17px;
+    }
+}
+
+
+/* Pricing Section */
+.massage_singe_price{
+    margin-top: 50px;
+   
+}
+.massage_singe_price .pricing_heading{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Montserrat';
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.massage_singe_price_wrapper {
+    background: var(--e-global-color-secondary);
+    padding: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+    overflow-x: auto;
+}
+.massage_singe_price_wrapper {
+    background: var(--e-global-color-secondary);
+    padding: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+    overflow-x: auto;
+}
+
+.massage_singe_price_wrapper .price-table-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (min-width: 768px) {
+    .massage_singe_price_wrapper .price-table-header {
+        gap: 15px;
+        padding: 18px 15px;
+    }
+}
+
+.massage_singe_price_wrapper .price-table-header .header-cell {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .massage_singe_price_wrapper .price-table-header .header-cell {
+        font-size: 18px;
+    }
+}
+
+.massage_singe_price_wrapper .price-table-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.massage_singe_price_wrapper .price-table-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (min-width: 768px) {
+    .massage_singe_price_wrapper .price-table-row {
+        gap: 15px;
+        padding: 15px;
+    }
+}
+
+.massage_singe_price_wrapper .price-cell {
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Montserrat';
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .massage_singe_price_wrapper .price-cell {
+        font-size: 17px;
+    }
+}
+
+.massage_singe_price_wrapper .price-cell:first-child {
+    font-weight: 500;
 }
