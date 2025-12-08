@@ -4,7 +4,7 @@ class SINGLE_MASSAGE
 {
     public function __construct()
     {
-        add_shortcode('single_masseur', array($this, 'single_masseur_shortcode'));
+        add_shortcode('single_massage', array($this, 'single_masseur_shortcode'));
     }
     public function single_masseur_shortcode()
     {
@@ -36,6 +36,7 @@ class SINGLE_MASSAGE
                 </div>
                 <!-- Grid two Massage Procedure -->
                 <div class="massage-procedure__info_wap">
+                    
 
                 </div>
 

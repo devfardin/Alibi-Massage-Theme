@@ -16,10 +16,7 @@ get_header();
 ?>
 <div class="alibi-massage-body">
     <div id="content">
-        <?php
-         echo \Elementor\Plugin::instance()->frontend-> get_builder_content_for_display(603);
-        ?>
-        
+        <?php echo \Elementor\Plugin::instance()->frontend-> get_builder_content_for_display(603); ?>
     </div>
 </div>
 
