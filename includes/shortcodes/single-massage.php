@@ -36,10 +36,20 @@ class SINGLE_MASSAGE
                 </div>
                 <!-- Grid two Massage Procedure -->
                 <div class="massage-procedure__info_wap">
-                    
-
+                     <div class="massage-procedure__list">
+                            <?php $additional_services = get_option('massage_procedure_settings');
+                            foreach ($additional_services['procedure_steps'] as $service): ?>
+                                <div class="additional-services__list__item">
+                                    <img src="<?php echo esc_url($service['image']);  ?>" alt="">
+                                    <span>
+                                        <?php echo esc_html($service['description']); ?>
+                                    </span>
+                                    <span>
+                                    </span>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
                 </div>
-
             </div>
         </div>
         <?php
