@@ -31,10 +31,28 @@
     color: white;
     font-family: 'Montserrat';
 }
+.massage_information__wrap .massage_title_des .massage_show_more_btn {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--e-global-color-primary);
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    padding: 0;
+    margin-top: 10px;
+}
+
 .massage_information__wrap .message_description {
     font-size: 17px;
     color: white !important;
     line-height: 1.7rem;
+    height: 255px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.massage_information__wrap .message_description.expanded{
+    height: auto;
+    transition: 0.4s;
 }
 
 .massage_information__wrap .message_description h1,

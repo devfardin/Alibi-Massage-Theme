@@ -38,6 +38,8 @@ class ALIBI_Assets
     {
         wp_enqueue_script('filterable_gallery', ALIBI_SCRIPT_URI . 'gallery.js', [], ALIBI_THEME_VERSION, true);
 
+        wp_enqueue_script('alibi-main-js', ALIBI_SCRIPT_URI . 'main.js', [], ALIBI_THEME_VERSION, true);
+
         $masseuses_data = array(
             'ajax_url' => admin_url('admin-ajax.php'),
             'nonce' => wp_create_nonce('filterable_gallery_nonce'),
@@ -46,6 +48,7 @@ class ALIBI_Assets
 
         // photo gallary script registration
         wp_register_script('photoswipe', ALIBI_SCRIPT_URI . 'masseur-gallery.js', ['jquery'], ALIBI_THEME_VERSION, true);
+
         
     }
     public function post_data_ajax()

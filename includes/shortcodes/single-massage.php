@@ -27,6 +27,7 @@ class SINGLE_MASSAGE
                         <div class="message_description">
                             <?php echo wpautop(wp_kses_post(get_post_meta(get_the_ID(), 'massage_description', true))); ?>
                         </div>
+                        <button class="massage_show_more_btn">Show More</button>
 
                     </div>
 
